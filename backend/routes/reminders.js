@@ -40,6 +40,10 @@ router.post("/generate/:documentId", authMiddleware, async (req, res) => {
     const createdReminders = [];
     const skippedReminders = [];
 
+    // Today's date at midnight
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     for (const days of reminderDays) {
       const scheduledDate = new Date(expiryDate);
 
@@ -50,7 +54,12 @@ router.post("/generate/:documentId", authMiddleware, async (req, res) => {
       // Schedule reminders at 9:00 AM
       scheduledDate.setHours(9, 0, 0, 0);
 
-      if (scheduledDate <= new Date()) {
+      // Skip only reminders from previous calendar days.
+      // Today's reminder is allowed even after 9:00 AM.
+      const reminderDay = new Date(scheduledDate);
+      reminderDay.setHours(0, 0, 0, 0);
+
+      if (reminderDay < today) {
         skippedReminders.push(days);
         continue;
       }

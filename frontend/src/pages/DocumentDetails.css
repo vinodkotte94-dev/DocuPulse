@@ -1,0 +1,207 @@
+
+.details-page {
+  padding: 30px;
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.back-button {
+  border: none;
+  background: #e2e8f0;
+  color: #1e40af;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.details-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.details-heading h2 {
+  color: #1e293b;
+  margin-bottom: 7px;
+}
+
+.details-heading p,
+.renewal-card > p {
+  color: #64748b;
+}
+
+.details-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
+.details-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.details-card h3 {
+  color: #1e40af;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 13px;
+}
+
+.detail-row span {
+  color: #64748b;
+}
+
+.detail-row strong {
+  color: #1e293b;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.expiry-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.details-card > p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.detail-file-section {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.detail-file-section h4 {
+  color: #1e293b;
+}
+
+.detail-file-section p {
+  color: #64748b;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.details-action-button,
+.details-download-button {
+  display: block;
+  padding: 9px 13px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.details-action-button {
+  background: #2563eb;
+}
+
+.details-download-button {
+  background: #64748b;
+}
+
+.renewal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.renewal-form label {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.renewal-form input,
+.renewal-form textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.renewal-submit {
+  background: #2563eb;
+  color: white;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.renewal-history-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.renewal-history-item strong {
+  color: #1e293b;
+}
+
+.renewal-history-item p,
+.renewal-history-item span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.details-message {
+  padding: 12px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 7px;
+}
+
+.details-loading {
+  padding: 30px;
+}
+
+@media (max-width: 750px) {
+  .details-page {
+    padding: 16px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-row {
+    flex-direction: column;
+  }
+
+  .detail-row strong {
+    text-align: left;
+  }
+}

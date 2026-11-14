@@ -1,0 +1,71 @@
+
+.dashboard {
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 18px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header h1 {
+  color: #2563eb;
+  margin: 0;
+}
+
+.dashboard-header button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  padding: 35px;
+}
+
+.dashboard-content h2 {
+  color: #1e293b;
+}
+
+.welcome-card {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-card h3 {
+  color: #2563eb;
+}
+
+.welcome-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 12px;
+  padding: 15px 30px;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
+
+.main-navigation button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
